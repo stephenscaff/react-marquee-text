@@ -1,0 +1,102 @@
+//----------------------------------------------
+// Set all to border-box
+//----------------------------------------------
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root,
+body {
+  height: 100%;
+}
+
+//----------------------------------------------
+// reset margins and paddings
+//----------------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+}
+
+//----------------------------------------------
+// Prevent Mobile Overflow
+//----------------------------------------------
+html,
+body {
+  overflow-x: hidden;
+}
+
+//----------------------------------------------
+// Smooth our type
+//----------------------------------------------
+body {
+  margin: 0;
+  width: 100%;
+  font-weight: 400;
+  font-style: normal;
+  font-family: var(--font-sans);
+  line-height: var(--base-line-height);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+//----------------------------------------------
+// RWD Images
+//----------------------------------------------
+img {
+  max-width: 100%;
+}
+
+img,
+svg,
+figure,
+picture,
+object,
+embed,
+iframe,
+video {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+//----------------------------------------------
+//  Global Links
+//----------------------------------------------
+a {
+  // @include links($color-alpha, lighten($color-alpha, 20));
+  text-decoration: none;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+main {
+  animation: fade-in 1.5s ease both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+}
+
+code {
+  font-family: var(--font-mono);
+  @include font-sizer(var(--font-size-xs), $md: var(--font-size-sm));
+}
+
+li,
+p {
+  @include font-sizer(var(--font-size-sm), $md: var(--font-size-md));
+}

@@ -1,0 +1,48 @@
+//----------------------------------------------
+//  font-sizer
+//  Change font-size across breaks
+//  @param: $font_sm  - at small
+//  @param: $font_med - at med break
+//  @param: $font_lg  - at Large break
+//  @param: $font_xl  - at Xlarge break
+//----------------------------------------------
+@mixin font-sizer(
+  $xs: null,
+  $sm: null,
+  $md: null,
+  $lg: null,
+  $xl: null,
+  $xl2: null
+) {
+  font-size: $xs;
+
+  @if $sm {
+    @media (min-width: $mq-sm) {
+      font-size: $sm;
+    }
+  }
+
+  @if $md {
+    @media (min-width: $mq-md) {
+      font-size: $md;
+    }
+  }
+
+  @if $lg {
+    @media (min-width: $mq-lg) {
+      font-size: $lg;
+    }
+  }
+
+  @if $xl {
+    @media (min-width: $mq-xl) {
+      font-size: $xl;
+    }
+  }
+
+  @if $xl2 {
+    @media (min-width: $mq-xl2) {
+      font-size: $xl2;
+    }
+  }
+}

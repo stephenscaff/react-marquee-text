@@ -1,0 +1,83 @@
+:root {
+  --font-sans: 'DM Sans', 'Helvetica Neue', Helvetica, sans-serif;
+  --font-mono: 'DM Mono', 'Andale Mono', monospace;
+
+  // font sizes
+  --font-size-xs-2: 0.85em;
+  --font-size-xs: 0.9em;
+  --font-size-sm: 1em;
+  --font-size-md: 1.15em;
+  --font-size-lg: 1.35em;
+  --font-size-xl: 1.5em;
+  --font-size-xl-2: 2.05em;
+  --font-size-xl-3: 2.75em;
+  --font-size-xl-4: 3em;
+
+  // base
+  --base-line-height: 1.8;
+  --base-border-radius: 8px;
+
+  // colors
+  --color-neutral-0: #fff;
+  --color-neutral-1: #fefefe;
+  --color-neutral-2: #a7a6a6;
+  --color-neutral-3: #999;
+  --color-nuetral-4: #28282c;
+  --color-neutral-5: #28231c;
+  --color-neutral-6: #070707;
+
+  --color-accent-1: #e8feff;
+  --color-accent-2: #ffcf99;
+  --color-accent-3: #005744;
+  --color-accent-4: #27213c;
+  --color-accent-5: #240115;
+
+  // aliases
+  --color-text: var(--color-neutral-5);
+  --color-text-light: var(--color-accent-1);
+  --color-text-on-background-light: var(--color-accent-3);
+  --color-text-code: var(--color-accent-1);
+  --color-link: var(--color-accent-3);
+  --color-background-dark: var(--color-accent-3);
+  --color-background-light: var(--color-accent-2);
+  --color-background-code: var(--color-accent-4);
+  --color-border-light: var(--color-accent-1);
+
+  // spacing
+  --space-unit: 1em;
+  --space-25: calc(0.25 * var(--space-unit));
+  --space-50: calc(0.5 * var(--space-unit));
+  --space-100: calc(1 * var(--space-unit));
+  --space-150: calc(1.5 * var(--space-unit));
+  --space-200: calc(2 * var(--space-unit));
+  --space-250: calc(2.5 * var(--space-unit));
+  --space-300: calc(3 * var(--space-unit));
+  --space-350: calc(3.5 * var(--space-unit));
+  --space-400: calc(4 * var(--space-unit));
+  --space-450: calc(4.5 * var(--space-unit));
+  --space-500: calc(5 * var(--space-unit));
+  --space-550: calc(5.5 * var(--space-unit));
+  --space-600: calc(6 * var(--space-unit));
+  --space-700: calc(7 * var(--space-unit));
+  --space-800: calc(8 * var(--space-unit));
+  --space-900: calc(9 * var(--space-unit));
+  --space-1000: calc(10 * var(--space-unit));
+  --space-1100: calc(11 * var(--space-unit));
+  --space-1200: calc(12 * var(--space-unit));
+
+  // easings
+  --ease-1: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-2: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-3: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-4: cubic-bezier(0.58, 0.3, 0.005, 1);
+
+  --header-height: 3em;
+  --header-height--: calc(var(--header-height) * -1);
+
+  --grid-max-width: 52em;
+  --grid-outer-gutter: 1em;
+
+  @media (min-width: $mq-md) {
+    --header-height: 4em;
+  }
+}

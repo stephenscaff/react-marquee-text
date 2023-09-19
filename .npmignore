@@ -1,0 +1,14 @@
+.DS_Store
+.babelrc
+.cache
+.parcel-cache
+.tmp
+*.log
+.gitignore
+node_modules
+npm-debug.log
+demo
+docs
+lib
+src
+

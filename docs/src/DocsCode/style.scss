@@ -1,0 +1,26 @@
+@import '../../src/styles/_vars.scss';
+
+.code-block {
+  background: var(--color-background-code);
+  color: var(--color-text-code);
+  margin: 0 -1.8em;
+  padding: 1em 1.8em;
+  border-radius: 0;
+  overflow-x: hidden;
+
+  @media (min-width: $mq-md) {
+    padding: 2em;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+  }
+
+  &__pre {
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    white-space: pre-wrap;
+  }
+
+  &.is-lg {
+    padding: 2em;
+  }
+}

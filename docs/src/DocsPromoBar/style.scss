@@ -1,0 +1,50 @@
+@import '../../src/styles/_vars.scss';
+@import '../../src/styles/_tools.scss';
+
+:root {
+  --promo-bar-height: 3em;
+  --promo-bar-color-background: #000;
+}
+.docs-promo {
+  z-index: 9;
+  position: sticky;
+  width: 100%;
+  height: var(--promo-bar-height);
+  display: flex;
+  align-items: center;
+  background-color: var(--color-background-light);
+  color: var(--color-text-on-background-light);
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+
+    & > div {
+      padding: 0 2em;
+      font-weight: 700;
+    }
+  }
+
+  .marquee__items {
+    // display: flex;
+    // justify-content: space-between;
+    // width: 100%;
+    // margin: 0 auto;
+
+    & > div {
+      padding: 0 1em;
+      //margin: 0;
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

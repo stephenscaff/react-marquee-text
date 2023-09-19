@@ -1,0 +1,87 @@
+{
+  "name": "react-marquee-text",
+  "version": "1.0.0",
+  "description": "A React TS component that creates continous scrolling text.",
+  "author": "Stephen Scaff <stephenscaff.com>",
+  "homepage": "https://stephenscaff.github.io/react-marquee-text/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stephenscaff/react-marquee-text"
+  },
+  "bugs": {
+    "url": "https://github.com/stephenscaff/react-marquee-text/issues"
+  },
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "browser": "dist/index.umd.js",
+  "files": [
+    "dist/index.js",
+    "dist/index.es.js",
+    "dist/index.umd.js",
+    "dist/index.d.ts"
+  ],
+  "targets": {
+    "main": false,
+    "module": false,
+    "browser": false,
+    "types": false
+  },
+  "directories": {
+    "docs": "docs"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "rollup -c",
+    "dev": "parcel ./docs/src/index.html --dist-dir ./dist",
+    "docs:clean": "rm -rf ./docs/dist",
+    "docs:start": "parcel ./docs/src/index.html --dist-dir ./docs/dist",
+    "docs:build": "parcel build ./docs/src/index.html --dist-dir ./docs/dist --public-url ./",
+    "docs:deploy": "npm run docs:build && gh-pages -d ./docs/dist",
+    "prepare": "npm run build",
+    "prepublish": "rm -rf ./dist && npm run build",
+    "lint": "eslint \"src/**/*.+(ts|tsx)\" --fix ",
+    "format": "prettier --write  \"src/**/*.+(ts|tsx)\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "react marquee text",
+    "marquee",
+    "marquee text",
+    "marquee animation",
+    "text animation",
+    "text effect"
+  ],
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.0",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.0.0",
+    "parcel": "^2.9.3",
+    "prettier": "^3.0.2",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.28.0",
+    "rollup-plugin-dts": "^6.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^5.1.6"
+  }
+}

@@ -1,0 +1,23 @@
+@import '../../src/styles/_vars.scss';
+
+.docs-footer {
+  padding: var(--space-400) 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+
+  &__icon {
+    width: 2em;
+    margin: 0 auto;
+  }
+
+  &__copy {
+    a {
+      color: var(--color-text);
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+@import '../../src/styles/_vars.scss';
+@import '../../src/styles/_tools.scss';
+
+.docs-header {
+  z-index: 9;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  background-color: var(--color-background-dark);
+  color: var(--color-text-light);
+  border-bottom: 1px solid var(--color-border-light);
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: calc(100% - var(--grid-outer-gutter) * 2);
+
+    @media (min-width: $mq-md) {
+      width: 99%;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    color: var(--color-text-light);
+    font-weight: 600;
+    cursor: pointer;
+    @include font-sizer(var(--font-size-sm), $md: var(--font-size-md));
+  }
+
+  &__link {
+    width: 24px;
+    line-height: 1;
+    align-self: center;
+
+    &-icon {
+      fill: #fff;
+      transition: fill 0.5s ease;
+    }
+
+    &:hover &-icon {
+      fill: var(--color-accent-3);
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

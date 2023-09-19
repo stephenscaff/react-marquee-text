@@ -1,0 +1,60 @@
+@import '../../src/styles/_vars.scss';
+
+.docs {
+  background-color: var(--color-neutral-0);
+  color: var(--color-neutral-6);
+  padding: var(--space-400) 0;
+
+  section + *,
+  div + &__title,
+  p + section,
+  p + h2,
+  ul + * {
+    margin-top: var(--space-200);
+  }
+
+  &__lead {
+    font-size: var(--font-size-md);
+    margin-bottom: var(--space-100);
+  }
+
+  &__title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--space-100);
+
+    @media (min-width: $mq-md) {
+      font-size: var(--font-size-xl);
+    }
+  }
+
+  &__subtitle {
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    margin-bottom: var(--space-100);
+
+    @media (min-width: $mq-md) {
+      font-size: var(--font-size-lg);
+    }
+  }
+
+  ul {
+    margin-left: 1em;
+    margin-bottom: var(--space-100);
+
+    li {
+      margin-bottom: var(--space-50);
+    }
+  }
+
+  p code {
+    background-color: var(--color-accent-2);
+    border-radius: 8px;
+    padding: 2px 4px;
+    font-size: 0.9em;
+  }
+
+  &-item + &-item {
+    margin-top: var(--space-100);
+  }
+}

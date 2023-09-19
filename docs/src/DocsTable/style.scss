@@ -1,0 +1,41 @@
+@import '../../src/styles/_vars.scss';
+@import '../../src/styles/_tools.scss';
+
+.docs-table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
+  @media (max-width: $mq-md) {
+    margin: 0 -1.8em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+  }
+
+  &__table {
+    padding: 1em 0;
+  }
+
+  th {
+    font-size: var(--font-size-md);
+    text-align: left;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid;
+  }
+
+  td {
+    padding: 1em;
+    text-align: left;
+    padding: 1em 1em 1em 0em;
+    vertical-align: top;
+    border-bottom: 1px solid var(--color-neutral-2);
+    @include font-sizer(var(--font-size-sm), $md: var(--font-size-md));
+
+    &:nth-of-type(3) {
+      min-width: 12em;
+    }
+
+    &:nth-of-type(4) {
+      min-width: 6em;
+    }
+  }
+}

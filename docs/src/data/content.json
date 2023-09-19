@@ -1,0 +1,147 @@
+{
+  "mast": {
+    "pretitle": "Howdie!",
+    "lines": [
+      {
+        "title": "StaggerText is a React Component for creating staggered text animations when the text is in viewport. You can stagger word by word, like this.",
+        "staggerType": "word",
+        "staggerDelay": 0.09,
+        "staggerDuration": 0.7
+      },
+      {
+        "title": "Or you can stagger letter by letter, like this.",
+        "staggerType": "letter",
+        "staggerDelay": 0.04,
+        "staggerDuration": 0.4,
+        "startDelay": 300
+      }
+    ]
+  },
+  "intro": {
+    "lead": "You like Staggered text animations? Well, then this library might be for you. StaggerText is a React component that transitions in text either word-by-word, or letter-by-letter, as the text enters viewport. Being a component and all, it has some options that we're gonna talk about... right now."
+  },
+  "features": {
+    "id": "features",
+    "title": "📌 Features",
+    "items": [
+      "Built in Typescript / first class Types support",
+      "Hybrid npm module, supporting <code>import</code> and <code>require</code>",
+      "Wraps words or letters inside spans so we can sequenly fade in each span.",
+      "Animations use css transitions.",
+      "Animations are triggered when text is in viewport, via Intersection Observer",
+      "Options exist for animation start, start delay, and stagger duration, delay, and easing.",
+      "Callback for when animation is complete"
+    ]
+  },
+  "quickStart": {
+    "id": "quickstart",
+    "title": "🎯 Quick Start",
+    "install": "Simply install the package from npm",
+    "use": "Now import <code>StaggerText</code>, provide some text, pass in a few options/props if you'd like. Text staggers in word-by-word as default."
+  },
+  "options": {
+    "id": "options",
+    "title": "🧬 Options",
+    "optionsTable": [
+      {
+        "id": "shouldStart",
+        "option": "<code>shouldStart</code>",
+        "type": "<code>boolean</code>",
+        "description": "Flag that starts stagger transition/animation",
+        "default": "<code>true</code>"
+      },
+      {
+        "id": "startTreshold",
+        "option": "<code>startTreshold</code>",
+        "type": "<code>number</code>",
+        "description": "Intersection Observer value between 0 and 1 representing the percentage component must be visible before stagger starts.",
+        "default": "<code>0.1</code>"
+      },
+      {
+        "id": "startDelay",
+        "option": "<code>startDelay</code>",
+        "type": "<code>number</code>",
+        "description": "Delay before stagger animation starts",
+        "default": "<code>0</code>"
+      },
+      {
+        "id": "staggerType",
+        "option": "<code>staggerType</code>",
+        "type": "<code>'word' | 'letter'</code>",
+        "description": "Defines if stagger animation is by word or letter",
+        "default": "<code>word</code>"
+      },
+      {
+        "id": "staggerDuration",
+        "option": "<code>staggerDuration</code>",
+        "type": "<code>number</code>",
+        "description": "Duration of animation",
+        "default": "<code>0.5</code>"
+      },
+      {
+        "id": "staggerDelay",
+        "option": "<code>staggerDelay</code>",
+        "type": "<code>number</code></code>",
+        "description": "Delay between staggers",
+        "default": "<code>0.05</code>"
+      },
+      {
+        "id": "staggerEasing",
+        "option": "<code>staggerEasing</code>",
+        "type": "<code>string</code>",
+        "description": "Custom easing to stagger transition-based animation",
+        "default": "<code>ease-in</code>"
+      },
+      {
+        "id": "hasInlineBlockWrapper",
+        "option": "<code>hasInlineBlockWrapper</code>",
+        "type": "<code>boolean</code>",
+        "description": "Adds 'inline-block' display to wrapping element",
+        "default": "<code>false</code>"
+      },
+      {
+        "id": "onStaggerComplete",
+        "option": "<code>onTransitionComplete</code>",
+        "type": "<code>() => void</code>",
+        "description": "Callback when stagger animation fully completes",
+        "default": "<code>void</code>"
+      },
+      {
+        "id": "children",
+        "option": "<code>children</code>",
+        "type": "<code>string</code>",
+        "description": "React children for providing text as string",
+        "default": "<code>null</code>"
+      }    
+    ]
+  },
+  "useage": {
+    "id": "useage",
+    "title": "🕹️ Useage"
+  },
+  "notes": {
+    "id": "notes",
+    "title": "📓 Notes",
+    "items": [
+      {
+        "title": "Smooth transitions",
+        "content": "<p>For smoother, less chopy transitions, favor longer <code>staggerDuration</code> and shorter <code>staggerDelay</code>. For example, <code>StaggerDuration={0.7} StaggerDelay={0.09}</code> provides a nice smooth effect by word. Perhaps reduce the duration a tad for letters.</p>"
+      },
+      {
+        "title": "Stagger a series of lines sequentially",
+        "content": "<p>The stagger a series of lines, wrap each line in a component instances and leverage the <code>onStaggerComplete</code> callback and <code>shouldStart</code> prop. Ideally, you can do this dynamically with some data defining your text and prop config and <code>useState</code>. See a complete example above.</p>"
+      }
+    ]
+  },
+  "todos": {
+    "id": "todos",
+    "title": "📅 To Dos",
+    "items": [
+        "<s>Add callback for when stagger completes</s>",
+        "<s>Add option for controling start of stagger</s>",
+        "Maybe remove span wrappers from dom once stagger completes?",
+        "Maybe provide a method for restarting or even rewinding transitions?",
+        "Provide addition animationType that slices text into view via translateY"
+    ]
+  }
+}
