@@ -3,26 +3,28 @@ import useInView from './hooks/useInView'
 import { MarqueeTextProps } from './types'
 import './styles.css'
 
-// const marqueeContainerStyles: React.CSSProperties = {
-//   position: 'relative',
-//   width: '100%',
-//   overflow: 'hidden'
-// }
+const marqueeContainerStyles: React.CSSProperties = {
+  position: 'relative',
+  width: '100%',
+  overflow: 'hidden'
+}
 
 const marqueeItemsStyles = (
   startPosition: number,
   time: number,
-  direction?: string
+  direction?: string,
+  willChange?: boolean
 ): React.CSSProperties => ({
   display: 'inline-block',
   whiteSpace: 'nowrap',
-  transform: `translateX(-${startPosition}px)`,
+  transform: `translate3d(-${startPosition}px, 0, 0)`,
   animationName: 'marqueeScroll',
   animationDuration: `${time}s`,
   animationTimingFunction: 'linear',
   animationIterationCount: 'infinite',
   animationPlayState: 'var(--marquee-play)',
-  animationDirection: direction === 'right' ? 'reverse' : undefined
+  animationDirection: direction === 'right' ? 'reverse' : undefined,
+  ...(willChange && { willChange: 'transform' })
 })
 
 const marqueeItemStyles = (marginRight: string): React.CSSProperties => ({
@@ -31,7 +33,10 @@ const marqueeItemStyles = (marginRight: string): React.CSSProperties => ({
   marginRight: marginRight
 })
 
-const getClonedItems = (items: string[], copyTimes = 1): string[] => {
+const getClonedItems = (
+  items: (string | number | React.ReactNode)[],
+  copyTimes = 1
+): (string | number)[] => {
   return Array(copyTimes).fill(items).flat()
 }
 
@@ -100,6 +105,7 @@ const MarqueeText: React.FC<MarqueeTextProps> = ({
       ref={marqueeContainer}
       className={`marquee ${className}`}
       style={{
+        ...marqueeContainerStyles,
         ['--marquee-play' as string]: isPlaying ? 'running' : 'paused'
       }}
       onMouseEnter={handleMouseEnter}

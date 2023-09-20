@@ -1,6 +1,6 @@
 # React Marquee Text
 
-MarqueeText is a React component that brings it on back to the days of internet yore, paying homage to the fanciful Marquee element. Writen in TypeScript, MarqueeText inserts areas of continous scrolling text, empowering your vintage or brutalist-inspried materpieces.
+MarqueeText is a React component that brings it on back to the internet of days gone by. Paying homage to the vintage Marquee element, MarqueeText inserts areas of continous scrolling text, empowering your retro or brutalist-inspried materpieces.
 
 [Docs / Demo](https://stephenscaff.github.io/react-marquee-text/)
 
@@ -20,12 +20,12 @@ MarqueeText is a React component that brings it on back to the days of internet 
 
 ## 📌 Features
 
-- Built in Typescript
+- Built in Typescript.
 - Creates continous scrolling animations of text.
-- Clones text based on it's size and width of screen to ensure continous effect.
-- Uses CSS animation
-- By default, scrolling animations are triggered when text is in viewport, via Intersection Observer
-- Options exist for duration and direction
+- Creates continous loop effect by cloning text to ensure it fills container.
+- Uses CSS animation.
+- Scrolling animation starts / stops when text is in viewport (by default), via Intersection Observer
+- Options to control scrolling direction and duration.
 
 [Live Demo→](https://stephenscaff.github.io/react-marquee-text/)
 
@@ -41,6 +41,7 @@ MarqueeText is a React component that brings it on back to the days of internet 
 
 ```
 import MarqueeText from "react-marquee-text"
+import "MarqueeText/styles.css"
 
 function SomeComponent() {
   return (
@@ -49,6 +50,12 @@ function SomeComponent() {
     </MarqueeText>
   )
 }
+```
+
+Depending on your CSS bundling configuration, you may have to also import MarqueeText's CSS file (which houses the simple @keyframe aniamtion)
+
+```
+
 ```
 
 <br>
@@ -87,6 +94,7 @@ On build, `src` populates `dist` with commonjs, es, umd versions of the componen
 | `pauseOnHover`  | `boolean` | Pauses scroll animation on hover | `false` |
 | `playOnlyInView` | `string` | Only run play animation when component is visible in viewport  | `true` |
 | `treshold` | `number` | Intersection Observer value between 0 and 1 representing the percentage component must be visible before stagger animation starts. | `0.1` |
+| `willChange` | `boolean` | Adds `will-change` to animation to potential enhance animation performance | `false` |
 
 <br/>
 
@@ -106,17 +114,18 @@ On build, `src` populates `dist` with commonjs, es, umd versions of the componen
 
 ## 📓 Notes
 
-### Smooth transitions
+### Mostly inlined CSS
 
-TBD
+The package largely uses inlined CSS. Currently, the `@keyframes` animation is the only declaration housed in an external CSS file. `styles.css` is imported into the `tsx` file, but given your bundle setup, you may, or may not, have to handle that import. If the animation doesn't run immediately, try importing `react-marquee-text/styles.css` directly in your project.
 
 <br/>
 
 ## 📅 To Dos
 
+- Add option to control animation based on scroll position.
 - Maybe add some callbacks?
-- Explore js animation?
 - Maybe add vertical scrolling option?
+- Run more robust perf tests. Would js / RAF animation or WAAPI be better, esp for multiple instances?
 - Add some proper tests
 
 <br/>

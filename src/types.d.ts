@@ -1,5 +1,7 @@
+import { ReactNode } from 'react'
+
 export interface MarqueeTextProps {
-  children?: string
+  children?: ReactNode
   className?: string
   duration?: number
   direction?: 'left' | 'right'

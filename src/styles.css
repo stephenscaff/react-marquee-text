@@ -1,11 +1,11 @@
 @keyframes marqueeScroll {
   to {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 }
 
-.marquee {
+/* .marquee {
   position: relative;
   width: 100%;
   overflow: hidden;
-}
+} */

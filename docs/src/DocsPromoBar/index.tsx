@@ -1,8 +1,9 @@
+import { ReactNode } from 'react'
 import MarqueeText from '../../../src'
 import './style.scss'
 
 interface DocsPromoBarProps {
-  children: string
+  children: ReactNode
 }
 
 const DocsPromoBar: React.FC<DocsPromoBarProps> = ({ children }) => (

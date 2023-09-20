@@ -34,7 +34,7 @@
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "rollup -c",
-    "dev": "parcel ./docs/src/index.html --dist-dir ./dist",
+    "dev": "parcel ./docs/src/index.html --dist-dir ./docs/dist",
     "docs:clean": "rm -rf ./docs/dist",
     "docs:start": "parcel ./docs/src/index.html --dist-dir ./docs/dist",
     "docs:build": "parcel build ./docs/src/index.html --dist-dir ./docs/dist --public-url ./",
@@ -80,6 +80,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.28.0",
+    "rollup-plugin-css-only": "^4.3.0",
     "rollup-plugin-dts": "^6.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "typescript": "^5.1.6"

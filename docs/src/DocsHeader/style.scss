@@ -31,6 +31,10 @@
     font-weight: 600;
     cursor: pointer;
     @include font-sizer(var(--font-size-sm), $md: var(--font-size-md));
+
+    &:hover {
+      color: var(--color-accent-2);
+    }
   }
 
   &__link {
@@ -39,12 +43,12 @@
     align-self: center;
 
     &-icon {
-      fill: #fff;
+      fill: var(--color-text-light);
       transition: fill 0.5s ease;
     }
 
     &:hover &-icon {
-      fill: var(--color-accent-3);
+      fill: var(--color-accent-2);
     }
   }
 }

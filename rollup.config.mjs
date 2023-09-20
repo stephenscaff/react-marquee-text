@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
 import pkg from './package.json' assert { type: 'json' }
+import css from 'rollup-plugin-css-only'
 
 const paths = {
   input: 'src/index.ts',
@@ -17,12 +18,15 @@ const plugins = {
   typescript: typescript({
     exclude: 'node_modules'
   }),
+  css: css({
+    output: 'styles.css'
+  }),
   dts: dts()
 }
 
 const umdGlobals = {
   react: 'React',
-  'react-stagger-text': 'StaggerText',
+  'react-marquee-text': 'MarqueeText',
   'react/jsx-runtime': 'jsxRuntime'
 }
 
@@ -41,7 +45,7 @@ const umdConfig = {
     {
       file: pkg.browser,
       format: 'umd',
-      name: 'StaggerText',
+      name: 'MarqueeText',
       globals: umdGlobals
     }
   ],
@@ -49,7 +53,8 @@ const umdConfig = {
     plugins.external,
     plugins.resolve,
     plugins.commonjs,
-    plugins.typescript
+    plugins.typescript,
+    plugins.css
   ]
 }
 
@@ -70,7 +75,7 @@ const esmConfig = {
       format: 'es'
     }
   ],
-  plugins: [plugins.external, plugins.resolve, plugins.dts]
+  plugins: [plugins.external, plugins.resolve, plugins.css, plugins.dts]
 }
 
 const config = [umdConfig, typesConfig, esmConfig]

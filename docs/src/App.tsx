@@ -22,7 +22,7 @@ export default function App() {
         <div>●</div>
       </DocsPromoBar>
       <DocsHeader />
-      <DocsMast />
+      <DocsMast marquees={data.mast.marquees} />
       <main>
         <Docs>
           <p>{data.intro.lead}</p>
@@ -49,13 +49,14 @@ export default function App() {
 
           <DocsCode language="tsx">
             {`import MarqueeText from "react-marquee-text"
+import 'MarqueeText/styles.css' // may not be required depending on your bundle config
 
 function SomeComponent() {
   return (
     <h1>
-      <StaggerText>
+      <MarqueeText>
         This text will be staggered by word
-      </StaggerText>
+      </MarqueeText>
     </h1>
   )
 }
@@ -69,98 +70,17 @@ function SomeComponent() {
           <h2 id={data.useage.id} className="docs__title">
             {data.useage.title}
           </h2>
-          <h5 className="docs__subtitle">Stagger by letter</h5>
+          <h5 className="docs__subtitle">Provide options</h5>
           <DocsCode language="tsx">
-            {`<StaggerText
-  staggerType='letter'
-  staggerDuration={0.4}
-  startDelay={0.04}
+            {`<MarqueeText
+  direction='left'
+  duration={50}
+  pauseOnHover={true}
 >
- Let's go ahead and stagger this by letter.
+ Here's and instance with some options ya'll
 </StaggerText>
 `}
           </DocsCode>
-
-          <h5 className="docs__subtitle">Stagger with extended start delay</h5>
-          <DocsCode language="tsx">{`<StaggerText
-  staggerType='letter'
-  staggerDuration={0.4}
-  startDelay={0.04}
-  startDelay={500}
->
- Let's go ahead and stagger this by letter with a start delay.
-</StaggerText>`}</DocsCode>
-
-          <h5 className="docs__subtitle">Stagger with custom easing</h5>
-          <DocsCode language="tsx">{`<StaggerText
-  staggerType='letter'
-  staggerEasing='cubic-bezier(0.4, 0, 0.2, 1)'
->
- Stagger this text with custom easing
-</StaggerText>`}</DocsCode>
-
-          <h5 className="docs__subtitle">Stagger with callback</h5>
-          <DocsCode language="tsx">{`const handleStaggerEnd = () => {
-  console.log('sup ya'll, i'm dun')
-}
-
-<StaggerText
-  onStaggerComplete={handleStaggerEnd}
->
-  Stagger this text, then let em know
-</StaggerText>`}</DocsCode>
-
-          <h5 className="docs__subtitle">
-            Sequentially start stagger instances
-          </h5>
-          <DocsCode language="tsx">{`// Some data with titles and config
-const lines = [
-  {
-    title: "Stagger this first line by word",
-    staggerType: "word",
-    staggerDelay: 0.09,
-    staggerDuration: 0.7
-  },
-  {
-    title: "And, stagger this line by letter after the first.",
-    staggerType: "letter",
-    staggerDelay: 0.04,
-    staggerDuration: 0.4,
-    startDelay: 300
-  }
-  // etc
-]
-
-// Component
-import { useState } from 'react'
-
-const StaggeredTextLines: React.FC<Props> = (lines) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-
-  // Callback handler
-  const handleStaggerComplete = () => {
-    setCurrentIndex((prevIndex) => prevIndex + 1)
-  }
-
-  return (
-    {lines.map((line, index) => (
-      <StaggerText
-        key={index}
-        onStaggerComplete={
-          index === currentIndex ? handleStaggerComplete : null
-        }
-        shouldStart={index === currentIndex}
-        startDelay={line.startDelay}
-        staggerType={line.staggerType}
-        staggerDuration={line.staggerDuration}
-        staggerDelay={line.staggerDelay}
-      >
-        {line.title}
-      </StaggerText>
-    }
-  )
-}
-`}</DocsCode>
 
           <h2 id={data.notes.id} className="docs__title">
             {data.notes.title}
