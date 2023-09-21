@@ -41,7 +41,7 @@ const getClonedItems = (
 }
 
 const MarqueeText: React.FC<MarqueeTextProps> = ({
-  className,
+  className = 'marquee',
   duration = 50,
   direction = 'left',
   pauseOnHover = false,
@@ -54,7 +54,6 @@ const MarqueeText: React.FC<MarqueeTextProps> = ({
   const marqueeItems = useRef<HTMLDivElement>(null)
   const [translateFrom, setTranslateFrom] = useState(0)
   const [showItems, setShowItems] = useState(Children.toArray(children))
-
   const [initialDuration, setInitialDuration] = useState(duration)
   const [isPlaying, setIsPlaying] = useState(true)
 
@@ -103,7 +102,7 @@ const MarqueeText: React.FC<MarqueeTextProps> = ({
   return (
     <div
       ref={marqueeContainer}
-      className={`marquee ${className}`}
+      className={`${className}`}
       style={{
         ...marqueeContainerStyles,
         ['--marquee-play' as string]: isPlaying ? 'running' : 'paused'
@@ -112,12 +111,16 @@ const MarqueeText: React.FC<MarqueeTextProps> = ({
       onMouseLeave={handleMouseLeave}
     >
       <div
-        className="marquee__items"
+        className={`${className}__items`}
         style={marqueeItemsStyles(translateFrom, initialDuration, direction)}
         ref={marqueeItems}
       >
         {showItems.map((item, index) => (
-          <div style={marqueeItemStyles(textSpacing)} key={index}>
+          <div
+            className={`${className}__item`}
+            style={marqueeItemStyles(textSpacing)}
+            key={index}
+          >
             {item}
           </div>
         ))}

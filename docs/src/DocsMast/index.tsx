@@ -19,7 +19,7 @@ const DocsMast: React.FC<DocsMastProps> = ({ marquees }) => {
           {marquees.map((marquee, index) => (
             <Fragment key={index}>
               <MarqueeText
-                className="mast__text"
+                className="marquee"
                 direction={marquee.direction}
                 duration={marquee.duration}
                 pauseOnHover={marquee.pauseOnHover}

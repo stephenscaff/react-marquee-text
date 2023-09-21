@@ -12,7 +12,6 @@ import data from './data/content.json'
 export default function App() {
   return (
     <>
-      {/* @ts-ignore */}
       <DocsPromoBar>
         <div>React MarqueeText</div>
         <div>●</div>

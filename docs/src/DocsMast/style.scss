@@ -10,9 +10,9 @@
   @media (min-width: $mq-md) {
     padding: var(--space-100) 0;
   }
-  &__text {
+  .marquee__items {
     line-height: 1.25;
-    @include font-sizer(8vmax, $xl2: 9vmax);
+    @include font-sizer(10vmax, $xl2: 9vmax);
   }
 
   &__sep {

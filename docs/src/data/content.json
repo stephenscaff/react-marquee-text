@@ -4,7 +4,7 @@
       {
         "title": "This is a MarqueeText a React Component written in TypeScript.",
         "direction": "left",
-        "duration": 35,
+        "duration": 10,
         "pauseOnHover": true
       },
       {
@@ -63,7 +63,7 @@
         "id": "className",
         "option": "<code>className</code>",
         "type": "<code>string</code>",
-        "description": "Defines a parent class name",
+        "description": "Defines a parent class name for BEM-like naming",
         "default": "<code>null</code>"
       },
       {
