@@ -1,6 +1,6 @@
 # React Marquee Text
 
-MarqueeText is a React component that brings it on back to the internet of days gone by. Paying homage to the vintage Marquee element, MarqueeText inserts areas of continous scrolling text, empowering your retro or brutalist-inspried materpieces.
+MarqueeText is a React component that takes it back to the internet of days gone by. Paying homage to the vintage (and beloved) Marquee element, MarqueeText inserts areas of continuous scrolling text, empowering your retro or brutalist-inspired designs.
 
 [Docs / Demo](https://stephenscaff.github.io/react-marquee-text/)
 

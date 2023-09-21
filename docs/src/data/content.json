@@ -28,7 +28,7 @@
     ]
   },
   "intro": {
-    "lead": "MarqueeText is a React component that brings it on back to the internet of days gone by. Paying homage to the vintage Marquee element, MarqueeText inserts areas of continous scrolling text, empowering your retro or brutalist-inspried materpieces."
+    "lead": "MarqueeText is a React component that takes it back to the internet of days gone by. Paying homage to the vintage (and beloved) Marquee element, MarqueeText inserts areas of continuous scrolling text, empowering your retro or brutalist-inspried designs.MarqueeText is a React component that takes it back to the internet of days gone by. Paying homage to the vintage (and beloved) Marquee element, MarqueeText inserts areas of continuous scrolling text, empowering your retro or brutalist-inspried designs."
   },
   "features": {
     "id": "features",
