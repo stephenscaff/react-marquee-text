@@ -118,6 +118,10 @@ On build, `src` populates `dist` with commonjs, es, umd versions of the componen
 
 The package largely uses inlined CSS. Currently, the `@keyframes` animation is the only declaration housed in an external CSS file. `styles.css` is imported into the `tsx` file, but given your bundle setup, you may, or may not, have to handle that import. If the animation doesn't run immediately, try importing `react-marquee-text/styles.css` directly in your project.
 
+### Supports HTML tags
+
+MarqueeText supports HTML elements, so you can wrap your text in spans or divs to style specific words.
+
 <br/>
 
 ## 📅 To Dos
