@@ -27183,60 +27183,60 @@ function App() {
                         children: "React MarqueeText"
                     }, void 0, false, {
                         fileName: "docs/src/App.tsx",
-                        lineNumber: 17,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "●"
                     }, void 0, false, {
                         fileName: "docs/src/App.tsx",
-                        lineNumber: 18,
+                        lineNumber: 17,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "TS Componnent"
                     }, void 0, false, {
                         fileName: "docs/src/App.tsx",
-                        lineNumber: 19,
+                        lineNumber: 18,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "●"
                     }, void 0, false, {
                         fileName: "docs/src/App.tsx",
-                        lineNumber: 20,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "Let's Go"
                     }, void 0, false, {
                         fileName: "docs/src/App.tsx",
-                        lineNumber: 21,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: "●"
                     }, void 0, false, {
                         fileName: "docs/src/App.tsx",
-                        lineNumber: 22,
+                        lineNumber: 21,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "docs/src/App.tsx",
-                lineNumber: 16,
+                lineNumber: 15,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _docsHeaderDefault.default), {}, void 0, false, {
                 fileName: "docs/src/App.tsx",
-                lineNumber: 24,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _docsMastDefault.default), {
                 marquees: (0, _contentJsonDefault.default).mast.marquees
             }, void 0, false, {
                 fileName: "docs/src/App.tsx",
-                lineNumber: 25,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("main", {
@@ -27246,7 +27246,7 @@ function App() {
                             children: (0, _contentJsonDefault.default).intro.lead
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 28,
+                            lineNumber: 27,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -27255,7 +27255,7 @@ function App() {
                             children: (0, _contentJsonDefault.default).features.title
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 30,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27265,17 +27265,17 @@ function App() {
                                         html: item
                                     }, void 0, false, {
                                         fileName: "docs/src/App.tsx",
-                                        lineNumber: 36,
+                                        lineNumber: 35,
                                         columnNumber: 17
                                     }, this)
                                 }, "docs-list" + index, false, {
                                     fileName: "docs/src/App.tsx",
-                                    lineNumber: 35,
+                                    lineNumber: 34,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 33,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -27283,14 +27283,14 @@ function App() {
                             children: (0, _contentJsonDefault.default).quickStart.title
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 41,
+                            lineNumber: 40,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: (0, _contentJsonDefault.default).quickStart.install
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 43,
+                            lineNumber: 42,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _docsCodeDefault.default), {
@@ -27298,7 +27298,7 @@ function App() {
                             children: `npm install react-marquee-text`
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 44,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -27307,12 +27307,12 @@ function App() {
                                 html: (0, _contentJsonDefault.default).quickStart.use
                             }, void 0, false, {
                                 fileName: "docs/src/App.tsx",
-                                lineNumber: 47,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 46,
+                            lineNumber: 45,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _docsCodeDefault.default), {
@@ -27332,7 +27332,7 @@ function SomeComponent() {
 `
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 50,
+                            lineNumber: 49,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -27341,14 +27341,14 @@ function SomeComponent() {
                             children: (0, _contentJsonDefault.default).options.title
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 65,
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _docsTableDefault.default), {
                             options: (0, _contentJsonDefault.default).options.optionsTable
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 68,
+                            lineNumber: 67,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -27357,7 +27357,7 @@ function SomeComponent() {
                             children: (0, _contentJsonDefault.default).useage.title
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 70,
+                            lineNumber: 69,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h5", {
@@ -27365,7 +27365,7 @@ function SomeComponent() {
                             children: "Provide options"
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 73,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _docsCodeDefault.default), {
@@ -27380,7 +27380,7 @@ function SomeComponent() {
 `
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 74,
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -27389,7 +27389,7 @@ function SomeComponent() {
                             children: (0, _contentJsonDefault.default).notes.title
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 85,
+                            lineNumber: 84,
                             columnNumber: 11
                         }, this),
                         (0, _contentJsonDefault.default).notes.items.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27400,20 +27400,20 @@ function SomeComponent() {
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "docs/src/App.tsx",
-                                        lineNumber: 91,
+                                        lineNumber: 90,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _htmlparserDefault.default), {
                                         html: item.content
                                     }, void 0, false, {
                                         fileName: "docs/src/App.tsx",
-                                        lineNumber: 92,
+                                        lineNumber: 91,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, "docs-item" + index, true, {
                                 fileName: "docs/src/App.tsx",
-                                lineNumber: 90,
+                                lineNumber: 89,
                                 columnNumber: 13
                             }, this)),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -27422,7 +27422,7 @@ function SomeComponent() {
                             children: (0, _contentJsonDefault.default).todos.title
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 96,
+                            lineNumber: 95,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
@@ -27432,33 +27432,33 @@ function SomeComponent() {
                                         html: item
                                     }, void 0, false, {
                                         fileName: "docs/src/App.tsx",
-                                        lineNumber: 102,
+                                        lineNumber: 101,
                                         columnNumber: 17
                                     }, this)
                                 }, "docs-list" + index, false, {
                                     fileName: "docs/src/App.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 100,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "docs/src/App.tsx",
-                            lineNumber: 99,
+                            lineNumber: 98,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "docs/src/App.tsx",
-                    lineNumber: 27,
+                    lineNumber: 26,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "docs/src/App.tsx",
-                lineNumber: 26,
+                lineNumber: 25,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _docsFooterDefault.default), {}, void 0, false, {
                 fileName: "docs/src/App.tsx",
-                lineNumber: 108,
+                lineNumber: 107,
                 columnNumber: 7
             }, this)
         ]
@@ -27497,7 +27497,7 @@ const DocsMast = ({ marquees })=>{
                 children: marquees.map((marquee, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Fragment), {
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _srcDefault.default), {
-                                className: "mast__text",
+                                className: "marquee",
                                 direction: marquee.direction,
                                 duration: marquee.duration,
                                 pauseOnHover: marquee.pauseOnHover,
@@ -27596,7 +27596,7 @@ const marqueeItemStyles = (marginRight)=>({
 const getClonedItems = (items, copyTimes = 1)=>{
     return Array(copyTimes).fill(items).flat();
 };
-const MarqueeText = ({ className, duration = 50, direction = "left", pauseOnHover = false, playOnlyInView = true, textSpacing = "0.15em", treshold = 0.1, children })=>{
+const MarqueeText = ({ className = "marquee", duration = 50, direction = "left", pauseOnHover = false, playOnlyInView = true, textSpacing = "0.15em", treshold = 0.1, children })=>{
     _s();
     const marqueeContainer = (0, _react.useRef)(null);
     const marqueeItems = (0, _react.useRef)(null);
@@ -27641,7 +27641,7 @@ const MarqueeText = ({ className, duration = 50, direction = "left", pauseOnHove
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         ref: marqueeContainer,
-        className: `marquee ${className}`,
+        className: `${className}`,
         style: {
             ...marqueeContainerStyles,
             ["--marquee-play"]: isPlaying ? "running" : "paused"
@@ -27649,25 +27649,26 @@ const MarqueeText = ({ className, duration = 50, direction = "left", pauseOnHove
         onMouseEnter: handleMouseEnter,
         onMouseLeave: handleMouseLeave,
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "marquee__items",
+            className: `${className}__items`,
             style: marqueeItemsStyles(translateFrom, initialDuration, direction),
             ref: marqueeItems,
             children: showItems.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: `${className}__item`,
                     style: marqueeItemStyles(textSpacing),
                     children: item
                 }, index, false, {
                     fileName: "src/MarqueeText.tsx",
-                    lineNumber: 120,
+                    lineNumber: 119,
                     columnNumber: 11
                 }, undefined))
         }, void 0, false, {
             fileName: "src/MarqueeText.tsx",
-            lineNumber: 114,
+            lineNumber: 113,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/MarqueeText.tsx",
-        lineNumber: 104,
+        lineNumber: 103,
         columnNumber: 5
     }, undefined);
 };
@@ -28443,7 +28444,7 @@ $RefreshReg$(_c, "DocsPromoBar");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","../../../src":"h7u1C","./style.scss":"jABOn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jABOn":[function() {},{}],"8iKM6":[function(require,module,exports) {
-module.exports = JSON.parse('{"mast":{"marquees":[{"title":"This is a MarqueeText a React Component written in TypeScript.","direction":"left","duration":35,"pauseOnHover":true},{"title":"Let\'s bring it back to the internet days of yore.","direction":"right","duration":40,"pauseOnHover":true},{"title":"Created by Stephen Scaff for your text moving pleasure.","direction":"left","duration":50,"pauseOnHover":true},{"title":"Snag it on NPM and get that text moving.","direction":"right","duration":30,"pauseOnHover":true}]},"intro":{"lead":"MarqueeText is a React component that brings it on back to the internet of days gone by. Paying homage to the vintage Marquee element, MarqueeText inserts areas of continous scrolling text, empowering your retro or brutalist-inspried materpieces."},"features":{"id":"features","title":"\uD83D\uDCCC Features","items":["Built in Typescript.","Creates continuous scrolling animations of text.","Creates continuous loop effect by cloning text to ensure it fills container.","Uses CSS animation.","Scrolling animation starts / stops when text is in viewport (by default), via Intersection Observer","Options to control scrolling direction and duration."]},"quickStart":{"id":"quickstart","title":"\uD83C\uDFAF Quick Start","install":"Simply install the package from npm","use":"Now import <code>MarqueeText</code>, provide some text and pass in any desired options."},"options":{"id":"options","title":"\uD83E\uDDEC Options","optionsTable":[{"id":"children","option":"<code>children</code>","type":"<code>string</code>","description":"React children for providing text as string","default":"<code>null</code>"},{"id":"className","option":"<code>className</code>","type":"<code>string</code>","description":"Defines a parent class name","default":"<code>null</code>"},{"id":"direction","option":"<code>direction</code>","type":"<code>\'left\' | \'right\'</code>","description":"Direction of scroll animation","default":"<code>left</code>"},{"id":"duration","option":"<code>duration</code>","type":"<code>number</code>","description":"Amount of time it takes for original text to complete animation","default":"<code>50</code>"},{"id":"textSpacing","option":"<code>textSpacing</code>","type":"<code>string</code>","description":"Spacing between cloned text items","default":"<code>0.15em</code>"},{"id":"pauseOnHover","option":"<code>pauseOnHover</code>","type":"<code>boolean</code>","description":"Pauses scroll animation on hover","default":"<code>false</code>"},{"id":"playOnlyInView","option":"<code>playOnlyInView</code>","type":"<code>string</code>","description":"Only run play animation when component is visible in viewport","default":"<code>true</code>"},{"id":"treshold","option":"<code>treshold</code>","type":"<code>number</code>","description":"Intersection Observer value between 0 and 1 representing the percentage component must be visible before stagger animation starts.","default":"<code>0.1</code>"},{"id":"willChange","option":"<code>willChange</code>","type":"<code>boolean</code>","description":"Adds <code>will-change</code> to animation to potentially enhance animation performance","default":"<code>false</code>"}]},"useage":{"id":"useage","title":"\uD83D\uDD79️ Useage"},"notes":{"id":"notes","title":"\uD83D\uDCD3 Notes","items":[{"title":"CSS Import","content":"<p>The package largely uses inlined CSS. Currently, the `@keyframes` animation is the only declaration housed in an external CSS file. `styles.css` is imported into the `tsx` file, but given your bundle setup, you may, or may not, have to handle that import. If the animation doesn\'t run immediately, try importing `react-marquee-text/styles.css` directly in your project.</p>"}]},"todos":{"id":"todos","title":"\uD83D\uDCC5 To Dos","items":["Add option to control animation based on scroll position.","Maybe add some callbacks?","Maybe add vertical scrolling option?","Run more robust perf tests. Would js / RAF animation or WAAPI be better, esp for multiple instances?","Add some proper tests"]}}');
+module.exports = JSON.parse('{"mast":{"marquees":[{"title":"This is a MarqueeText a React Component written in TypeScript.","direction":"left","duration":10,"pauseOnHover":true},{"title":"Let\'s bring it back to the internet days of yore.","direction":"right","duration":40,"pauseOnHover":true},{"title":"Created by Stephen Scaff for your text moving pleasure.","direction":"left","duration":50,"pauseOnHover":true},{"title":"Snag it on NPM and get that text moving.","direction":"right","duration":30,"pauseOnHover":true}]},"intro":{"lead":"MarqueeText is a React component that brings it on back to the internet of days gone by. Paying homage to the vintage Marquee element, MarqueeText inserts areas of continous scrolling text, empowering your retro or brutalist-inspried materpieces."},"features":{"id":"features","title":"\uD83D\uDCCC Features","items":["Built in Typescript.","Creates continuous scrolling animations of text.","Creates continuous loop effect by cloning text to ensure it fills container.","Uses CSS animation.","Scrolling animation starts / stops when text is in viewport (by default), via Intersection Observer","Options to control scrolling direction and duration."]},"quickStart":{"id":"quickstart","title":"\uD83C\uDFAF Quick Start","install":"Simply install the package from npm","use":"Now import <code>MarqueeText</code>, provide some text and pass in any desired options."},"options":{"id":"options","title":"\uD83E\uDDEC Options","optionsTable":[{"id":"children","option":"<code>children</code>","type":"<code>string</code>","description":"React children for providing text as string","default":"<code>null</code>"},{"id":"className","option":"<code>className</code>","type":"<code>string</code>","description":"Defines a parent class name for BEM-like naming","default":"<code>null</code>"},{"id":"direction","option":"<code>direction</code>","type":"<code>\'left\' | \'right\'</code>","description":"Direction of scroll animation","default":"<code>left</code>"},{"id":"duration","option":"<code>duration</code>","type":"<code>number</code>","description":"Amount of time it takes for original text to complete animation","default":"<code>50</code>"},{"id":"textSpacing","option":"<code>textSpacing</code>","type":"<code>string</code>","description":"Spacing between cloned text items","default":"<code>0.15em</code>"},{"id":"pauseOnHover","option":"<code>pauseOnHover</code>","type":"<code>boolean</code>","description":"Pauses scroll animation on hover","default":"<code>false</code>"},{"id":"playOnlyInView","option":"<code>playOnlyInView</code>","type":"<code>string</code>","description":"Only run play animation when component is visible in viewport","default":"<code>true</code>"},{"id":"treshold","option":"<code>treshold</code>","type":"<code>number</code>","description":"Intersection Observer value between 0 and 1 representing the percentage component must be visible before stagger animation starts.","default":"<code>0.1</code>"},{"id":"willChange","option":"<code>willChange</code>","type":"<code>boolean</code>","description":"Adds <code>will-change</code> to animation to potentially enhance animation performance","default":"<code>false</code>"}]},"useage":{"id":"useage","title":"\uD83D\uDD79️ Useage"},"notes":{"id":"notes","title":"\uD83D\uDCD3 Notes","items":[{"title":"CSS Import","content":"<p>The package largely uses inlined CSS. Currently, the `@keyframes` animation is the only declaration housed in an external CSS file. `styles.css` is imported into the `tsx` file, but given your bundle setup, you may, or may not, have to handle that import. If the animation doesn\'t run immediately, try importing `react-marquee-text/styles.css` directly in your project.</p>"}]},"todos":{"id":"todos","title":"\uD83D\uDCC5 To Dos","items":["Add option to control animation based on scroll position.","Maybe add some callbacks?","Maybe add vertical scrolling option?","Run more robust perf tests. Would js / RAF animation or WAAPI be better, esp for multiple instances?","Add some proper tests"]}}');
 
 },{}]},["1JDX7","1xC6H","5FdEX"], "5FdEX", "parcelRequireffff")
 
