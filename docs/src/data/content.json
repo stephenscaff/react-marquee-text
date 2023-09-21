@@ -4,7 +4,7 @@
       {
         "title": "This is a MarqueeText a React Component written in TypeScript.",
         "direction": "left",
-        "duration": 10,
+        "duration": 35,
         "pauseOnHover": true
       },
       {
@@ -16,7 +16,7 @@
       {
         "title": "Created by Stephen Scaff for your text moving pleasure.",
         "direction": "left",
-        "duration": 50,
+        "duration": 25,
         "pauseOnHover": true
       },
       {
