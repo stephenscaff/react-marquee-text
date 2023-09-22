@@ -1,6 +1,6 @@
 {
   "name": "react-marquee-text",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A React TS component that creates continous scrolling text.",
   "author": "Stephen Scaff <stephenscaff.com>",
   "homepage": "https://stephenscaff.github.io/react-marquee-text/",
