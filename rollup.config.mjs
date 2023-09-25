@@ -36,17 +36,20 @@ const umdConfig = {
   output: [
     {
       file: pkg.main,
-      format: 'cjs'
+      format: 'cjs',
+      banner: "'use client';"
     },
     {
       file: pkg.module,
-      format: 'es'
+      format: 'es',
+      banner: "'use client';"
     },
     {
       file: pkg.browser,
       format: 'umd',
       name: 'MarqueeText',
-      globals: umdGlobals
+      globals: umdGlobals,
+      banner: "'use client';"
     }
   ],
   plugins: [

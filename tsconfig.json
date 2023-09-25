@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "moduleResolution": "nodenext",
-    "target": "es2015",
+    "moduleResolution": "node",
+    "target": "es5",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "module": "esnext",
     "allowJs": true
   },
   "include": ["src"],
