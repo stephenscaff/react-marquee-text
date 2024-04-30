@@ -20,7 +20,8 @@
     "dist/index.js",
     "dist/index.es.js",
     "dist/index.umd.js",
-    "dist/index.d.ts"
+    "dist/index.d.ts",
+    "dist/styles.css"
   ],
   "targets": {
     "main": false,
