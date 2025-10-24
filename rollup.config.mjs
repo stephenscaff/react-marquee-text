@@ -3,8 +3,16 @@ import external from 'rollup-plugin-peer-deps-external'
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
 import dts from 'rollup-plugin-dts'
-import pkg from './package.json' assert { type: 'json' }
+import { readFileSync } from 'fs'
+import { fileURLToPath } from 'url'
+import path from 'path'
 import css from 'rollup-plugin-css-only'
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+const pkg = JSON.parse(
+  readFileSync(path.join(__dirname, 'package.json'), 'utf8')
+)
 
 const paths = {
   input: 'src/index.ts',
