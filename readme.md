@@ -52,8 +52,6 @@ function SomeComponent() {
 }
 ```
 
-Depending on your CSS bundling configuration, you may have to also import MarqueeText's CSS file (which houses the simple @keyframe aniamtion)
-
 ```
 
 ```
@@ -131,6 +129,19 @@ MarqueeText supports HTML elements, so you can wrap your text in spans or divs t
 - Maybe add vertical scrolling option?
 - Run more robust perf tests. Would js / RAF animation or WAAPI be better, esp for multiple instances?
 - Add some proper tests
+
+<br/>
+
+## 📅 Changelog
+
+### 1.0.6
+
+- Injected CSS for better next.js integration
+
+### 1.0.5
+
+- Updated to latest React
+- Updated to latest TS
 
 <br/>
 
