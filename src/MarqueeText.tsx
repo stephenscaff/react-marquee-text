@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect, Children } from 'react'
 import useInView from './hooks/useInView'
+import { injectMarqueeStyles } from './injectStyles'
 import { MarqueeTextProps } from './types'
-import './styles.css'
 
 const marqueeContainerStyles: React.CSSProperties = {
   position: 'relative',
@@ -63,6 +63,10 @@ const MarqueeText: React.FC<MarqueeTextProps> = ({
     threshold: [treshold],
     repeat: true
   })
+
+  useEffect(() => {
+    injectMarqueeStyles()
+  }, [])
 
   useEffect(() => {
     const containerWidth = Math.floor(marqueeContainer.current!.offsetWidth)
